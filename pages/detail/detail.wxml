@@ -11,9 +11,6 @@
 			</view>
 			<image src="/images/share.jpg"></image>
 		</view>
-		<view class="guarantee flexRowBetween">
-			<text>【售后保障1】</text><text>【售后保障1】</text>
-		</view>
 		<view class="price_sale flexRowBetween">
 			<view class="price">
 				￥5000.00元
@@ -43,9 +40,6 @@
 	<view class="detail_show">
 		<view id="detail" style="{{tabCurrent == 0?'display:block':'display:none'}}">
 			<image src="/images/detail1.jpg"></image>
-			<view class="video">
- <video style="width: 100%;height=400px;margin:1px;" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" binderror="videoErrorCallback"></video>
-</view>
 		</view>
 		<view id="comment" style="{{tabCurrent == 1?'display:block':'display:none'}}">
 			<view class="good_com flexRowBetween">
@@ -132,21 +126,8 @@
 </view>
 <view id="buy">
 	<view class="flexRowBetween">
-		<view class="consult" style="margin-right:40rpx;">
-			<image src="/images/kefu1.jpg"></image>
-			<view class="text1">客服</view>
-		</view>
-		<view class="consult collect">
-			<image src="/images/collect.jpg"></image>
-			<view class="text1">收藏</view>
-		</view>
-		<view class="go_buy flexRowBetween" bindtap="goBuy">
-			<view class="shoppingCart">
-				加入购物车
-			</view>
-			<view class="go_pay">
-				立即购买
-			</view>
+		<view class="go_buy" bindtap="goBuy">
+			立即购买
 		</view>
 	</view>
 </view>
@@ -156,10 +137,7 @@
 			<image src="/images/choose_pro.jpg"></image>
 		</view>
 		<view class="product_txt">
-			<view class="pro_name">公众号管理</view>
-			<view class="pro_type">
-				个性化定制
-			</view>
+			<view class="pro_name">洗发套餐</view>
 			<view class="price_choose">
 			￥3999
 			</view>
@@ -168,26 +146,29 @@
 		<image src="/images/close.jpg"></image>
 		</view>
 	</view>
-	<view id="type" class="flexRowBetween">
+	<view id="type" class="">
 		<view class="pro_type">	
 			类型
 		</view>
 		<view class="pro_types">	
-			模板
+			洗剪吹
 		</view>
 		<view class="pro_types">	
-			定制
+			烫发
+		</view>
+		<view class="pro_types">	
+			染发
 		</view>
 	</view>
-	<view id="type" class="flexRowBetween">
+	<view id="type" class="">
 		<view class="pro_type">	
-			售后
+			服务
 		</view>
 		<view class="pro_types">	
-			有
+			总监
 		</view>
 		<view class="pro_types">	
-			无
+			无要求
 		</view>
 	</view>
 	<view class="choose_number flexRowBetween">

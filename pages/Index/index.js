@@ -33,5 +33,25 @@ Page({
       url:'/pages/caseDetail/caseDetail'
     })
   },
-
+  group:function(){
+    wx.navigateTo({
+      url:'/pages/group/group'
+    })
+  },
+  store:function(){
+    wx.navigateTo({
+      url:'/pages/store/store'
+    })
+  },
+  map:function(){
+    wx.navigateTo({
+      url:'/pages/map/map'
+    })
+  },
+  HairDresser:function(){
+    console.log("jij")
+    wx.switchTab({
+      url:'/pages/HairDresser/hairDresser'
+    })
+  },
 })

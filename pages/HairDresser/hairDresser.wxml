@@ -1,0 +1,55 @@
+<!--gairDress.wxml-->
+<view id="dresser">
+	 <view class="dresser_item">
+        <image src="/images/dresser.jpg"></image>
+        <view class="text">
+          <text class="text1">梁辉</text><text class="text1 text2">技术总监</text>
+        </view>
+        <view class="dresser_intro">
+        	从事美发行业20年，擅长女士卷发，染发，烫发
+        </view>
+        <text class="number">160人预约过</text>
+        <view class="order" bindtap="order_dresser">
+          预约TA
+        </view>
+      </view>
+      <view class="dresser_item">
+        <image src="/images/dresser.jpg"></image>
+        <view class="text">
+          <text class="text1">梁辉</text><text class="text1 text2">技术总监</text>
+        </view>
+        <view class="dresser_intro">
+        	从事美发行业20年，擅长女士卷发，染发，烫发
+        </view>
+        <text class="number">160人预约过</text>
+        <view class="order">
+          预约TA
+        </view>
+      </view>
+       <view class="dresser_item">
+        <image src="/images/dresser.jpg"></image>
+        <view class="text">
+          <text class="text1">梁辉</text><text class="text1 text2">技术总监</text>
+        </view>
+        <view class="dresser_intro">
+        	从事美发行业20年，擅长女士卷发，染发，烫发
+        </view>
+        <text class="number">160人预约过</text>
+        <view class="order">
+          预约TA
+        </view>
+      </view>
+      <view class="dresser_item">
+        <image src="/images/dresser.jpg"></image>
+        <view class="text">
+          <text class="text1">梁辉</text><text class="text1 text2">技术总监</text>
+        </view>
+        <view class="dresser_intro">
+        	从事美发行业20年，擅长女士卷发，染发，烫发
+        </view>
+        <text class="number">160人预约过</text>
+        <view class="order">
+          预约TA
+        </view>
+      </view>
+</view>

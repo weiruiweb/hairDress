@@ -18,9 +18,9 @@ Page({
   onLoad: function () {
    
   },
-  go_shopping:function(){
-    wx.switchTab({
-      url:'/pages/Sort/sort'
+  newMemeber:function(){
+    wx.navigateTo({
+      url:'/pages/newMemeber/newMemeber'
     })
   }
 })

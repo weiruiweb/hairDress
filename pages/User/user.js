@@ -10,7 +10,17 @@ Page({
   },
   userInfo:function(){
     wx.navigateTo({
-      url:'/pages/userInfo/userInfo'
+      url:'/pages/member/member'
+    })
+  },
+  discount:function(){
+    wx.navigateTo({
+      url:'/pages/consume/consume'
+    })
+  },
+  address:function(){
+    wx.navigateTo({
+      url:'/pages/album/album'
     })
   },
   discount:function(){
@@ -18,14 +28,14 @@ Page({
       url:'/pages/discount/discount'
     })
   },
-  address:function(){
+  mygroup:function(){
     wx.navigateTo({
-      url:'/pages/manageAddress/manageAddress'
+      url:'/pages/myGroup/mygroup'
     })
   },
-  order:function(){
+  payment:function(){
     wx.navigateTo({
-      url:'/pages/order/order'
+      url:'/pages/payment/payment'
     })
-  }
+  },
 })

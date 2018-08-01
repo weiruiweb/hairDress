@@ -25,9 +25,12 @@
 	color:#999;
 	margin:20rpx 0rpx 35rpx;
 }
+.price_sale{
+	margin-top:54rpx;
+}
 .price{
 	font-size:30rpx;
-	color:#21c3d4;
+	color:#fd5274;
 }
 .sale{
 	font-size:26rpx;
@@ -65,7 +68,7 @@ line-height:62rpx;}
 	border-bottom:solid 1px #ececec;
 }
 .detail_select{
-	color:#21c3d4;
+	color:#fd5274;
 }
 .detail_comment .detail{
 	width:50%;
@@ -134,11 +137,11 @@ line-height:62rpx;}
 	color:#696969;
 	margin-top:20rpx;}
 #buy{
+	width:100%;
 	border-top:solid 1px #ececec;
-	height:60rpx;
+	height:120rpx;
 	position:fixed;
 	bottom:0rpx;
-	padding:15rpx 35rpx;
 	overflow:hidden;
 	background:#fff;
 	z-index:999;
@@ -156,16 +159,18 @@ line-height:62rpx;}
 	color:#626262;
 }
 .go_buy{
-	width:537rpx;
-	height:66rpx;
-	line-height:66rpx;
+	width:355rpx;
+	height:80rpx;
+	line-height:80rpx;
 	color:#fff;
 	font-size:28rpx;
 	font-weight:bold;
 	margin-left:38rpx;
-	background:#fff;
-	border-radius:30rpx;
+	background:#fd5274;
+	border-radius:50rpx;
 	overflow:hidden;
+	margin:20rpx auto;
+	text-align:center;
 }
 .shoppingCart{
 	width:50%;
@@ -231,21 +236,22 @@ line-height:62rpx;}
 	font-size:22rpx;
 	color:#999;
 	margin-top:10rpx;
+	float:left;
 }
 .price_choose{
 	font-size:28rpx;
-	color:#21c3d4;
+	color:#fd5274;
 	margin-top:30rpx;
 }
 .product_txt{width:470rpx;}
 #type{
 	height:60rpx;
 	margin-bottom:28rpx;
-	width:350rpx;
 }
 .pro_type{
 	font-size:30rpx;
 	color:#262626;
+	margin-right:40rpx;
 }
 .pro_types{
 	width:108rpx;
@@ -256,6 +262,8 @@ line-height:62rpx;}
 	color:#666;
 	background:#f7f7f7;
 	border-radius:3rpx;
+	float:left;
+	margin-right:30rpx;
 }
 .choose_number{
 	height:126rpx;
@@ -290,4 +298,7 @@ line-height:62rpx;}
 	width:624rpx;
 	height:350rpx;
 	margin:0rpx auto 200rpx;
+}
+.detail_show{
+	margin-bottom:120rpx;
 }

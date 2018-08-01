@@ -1,0 +1,230 @@
+<!--Beginappointment.wxml-->
+<view class="shore_choose flexRowBetween">
+    <input class="input2" placeholder="高新1号店"></input>
+    <image src="/images/next_page.jpg"></image>
+</view>
+<view class="shore_choose flexRowBetween">
+    <input class="input2" placeholder="技术总监  梁家辉"></input>
+    <image src="/images/next_page.jpg"></image> 
+</view>
+<view class="shore_choose">
+    <text>服务类型</text>
+    <image src="/images/next_page.jpg"></image>
+    <text class="text2">选填</text>  
+</view>
+<view class="shore_choose">
+    <text class="txt">类型</text>
+  
+    <text class="txt1">洗剪吹</text> 
+    <text class="txt1">烫发</text> 
+    <text class="txt1">染发</text>  
+</view>
+<view class="shore_choose flexRowBetween">
+    <text class="input_before">服务类型</text>
+    <input placeholder="请填写" class="input1"></input>  
+</view>
+<view class="shore_choose flexRowBetween">
+    <text class="input_before">数量</text>
+    <view class="edit_number flexRowBetween">
+      <view class="minus">-</view>
+      <view class="number">1</view>
+      <view class="add">+</view>
+
+    </view>
+</view>
+<view class="shore_choose">
+    <text>预约时长</text>
+    <image src="/images/next_page.jpg"></image>
+    <text class="text2">90分钟</text>  
+</view>
+<view id="data" >
+    <view class="data_all flexRowBetween">
+      <view class="date1" data-current="0" bindtap="changeData">
+         <text class="text1">7月24日</text>
+         <text class="text2">星期二</text>
+         <image src="{{tabCurrent == 0?'/images/up_icon.jpg':''}}"></image>
+      </view>
+      <view class="date1"  data-current="1" bindtap="changeData">
+         <text class="text1">7月25日</text>
+         <text class="text2">星期三</text>
+         <image src="{{tabCurrent == 1?'/images/up_icon.jpg':''}}"></image>
+      </view>
+      <view class="date1"  data-current="2" bindtap="changeData">
+         <text class="text1">7月26日</text>
+         <text class="text2">星期四</text>
+         <image src="{{tabCurrent == 2?'/images/up_icon.jpg':''}}"></image>
+      </view>
+      <view class="date_other"  data-current="3" bindtap="changeData">
+         <image src="/images/data.jpg">
+         </image>
+         <text class="text1">其他日期</text>
+
+      </view>
+    </view>
+
+    <view class="data_choose" style="{{tabCurrent == 0?'display:block':'display:none'}}">
+        <view class="text1">
+        10:00
+        </view>
+        <view class="text1">
+        10:30
+        </view>
+        <view class="text1">
+        11:00
+        </view>
+        <view class="text1">
+        11:30
+        </view>
+        <view class="text1">
+        10:00
+        </view>
+        <view class="text1">
+        10:30
+        </view>
+        <view class="text1">
+        11:00
+        </view>
+        <view class="text1">
+        11:30
+        </view>
+        <view class="text2">
+        10:00
+        </view>
+        <view class="text2">
+        10:30
+        </view>
+        <view class="text2">
+        11:00
+        </view>
+        <view class="text2">
+        11:30
+        </view>
+    </view>
+    <view class="data_choose" style="{{tabCurrent == 1?'display:block':'display:none'}}">
+        <view class="text1">
+        10:00
+        </view>
+        <view class="text1">
+        10:30
+        </view>
+        <view class="text1">
+        11:00
+        </view>
+        <view class="text1">
+        11:30
+        </view>
+        <view class="text1">
+        10:00
+        </view>
+        <view class="text1">
+        10:30
+        </view>
+        <view class="text1">
+        11:00
+        </view>
+        <view class="text1">
+        11:30
+        </view>
+        <view class="text2">
+        10:00
+        </view>
+        <view class="text2">
+        10:30
+        </view>
+        <view class="text2">
+        11:00
+        </view>
+        <view class="text2">
+        11:30
+        </view>
+    </view>
+    <view class="data_choose" style="{{tabCurrent == 2?'display:block':'display:none'}}">
+        <view class="text1">
+        10:00
+        </view>
+        <view class="text1">
+        10:30
+        </view>
+        <view class="text1">
+        11:00
+        </view>
+        <view class="text1">
+        11:30
+        </view>
+        <view class="text1">
+        10:00
+        </view>
+        <view class="text1">
+        10:30
+        </view>
+        <view class="text1">
+        11:00
+        </view>
+        <view class="text1">
+        11:30
+        </view>
+        <view class="text2">
+        10:00
+        </view>
+        <view class="text2">
+        10:30
+        </view>
+        <view class="text2">
+        11:00
+        </view>
+        <view class="text2">
+        11:30
+        </view>
+    </view>
+    <view class="data_choose" style="{{tabCurrent == 3?'display:block':'display:none'}}">
+        <view class="text1">
+        10:00
+        </view>
+        <view class="text1">
+        10:30
+        </view>
+        <view class="text1">
+        11:00
+        </view>
+        <view class="text1">
+        11:30
+        </view>
+        <view class="text1">
+        10:00
+        </view>
+        <view class="text1">
+        10:30
+        </view>
+        <view class="text1">
+        11:00
+        </view>
+        <view class="text1">
+        11:30
+        </view>
+        <view class="text2">
+        10:00
+        </view>
+        <view class="text2">
+        10:30
+        </view>
+        <view class="text2">
+        11:00
+        </view>
+        <view class="text2">
+        11:30
+        </view>
+    </view>
+</view>
+<view id="begin_appoint" class="flexRowBetween">
+  <view class="begin_left flexRowBetween">
+    <view class="text1">
+      预约定金
+    </view>
+    <view class="text2">
+      ¥222.00
+    </view>
+  </view>
+  <view class="begin_right">
+      立即预约
+  </view>
+</view>
