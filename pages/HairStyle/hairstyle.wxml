@@ -6,9 +6,9 @@
 			
 			<view class="madeSortItem">
 				<text class="text1"  style="{{tapCurrent == 0?'background:#fb5676;color:#fff;font-size:26rpx;':''}}">女士发型</text>
-				<text class="text2"  bindtap="tabCont"  data-id="0">短发</text>
-				<text class="text2 text3"  bindtap="tabCont"  data-id="1">中长发</text>
-				<text class="text2 text3"  bindtap="tabCont"  data-id="2">长发</text>
+				<text class="text2 {{currentId == 0?'this_text':''}}"  bindtap="tabCont"  data-id="0">短发</text>
+				<text class="text2 text3 {{currentId == 1?'this_text':''}}"  bindtap="tabCont"  data-id="1">中长发</text>
+				<text class="text2 text3  {{currentId == 2?'this_text':''}}"  bindtap="tabCont"  data-id="2">长发</text>
 			</view>
 			
 		</view>
@@ -16,365 +16,181 @@
 			
 			<view class="madeSortItem">
 				<text class="text1" style="{{tapCurrent == 1?'background:#fb5676;color:#fff;font-size:26rpx;':''}}">男士发型</text>
-				<text class="text2"  bindtap="tabCont"  data-id="3">模板类</text>
-				<text class="text2 text3"  bindtap="tabCont"  data-id="4">中长发</text>
-				<text class="text2 text3"  bindtap="tabCont"  data-id="5">长发</text>
+				<text class="text2  {{currentId == 3?'this_text':''}}"  bindtap="tabCont"  data-id="3">模板类</text>
+				<text class="text2 text3  {{currentId == 4?'this_text':''}}"  bindtap="tabCont"  data-id="4">中长发</text>
+				<text class="text2 text3  {{currentId == 5?'this_text':''}}"  bindtap="tabCont"  data-id="5">长发</text>
 			</view>
 		</view>
 	</view>
 	<view class="made_cont">
 		<view class="madeContItem {{currentId == 0?'madeShow':''}}">
 			<view class="flexRowBetween made_tlt">
-				<view class="made_name">女士-模板</view>
+				<view class="made_name">女士-短发</view>
 				<view class="made_more">更多 ></view>
 			</view>
-			<view class="made_case" bindtap="gongzhonghao">
+			<view class="made_case">
 				<view class="hairs_left">
-					<view class="made_item" bindtap="detail">
-						<image src="/images/hairs1.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					
-					<view class="made_item"  bindtap="detail">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-
-					<view class="made_item"  bindtap="detail">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-
-					<view class="made_item"  bindtap="detail">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
+					<block>
+						<view class="made_item" bindtap="detail" wx:for="{{girls_hairs1}}" wx:key='{{index}}' 
+        wx:if="{{index%2 == 1}}">
+							<image src="{{item.src}}" class="hairs_small"></image>
+							<view class="product_name">{{item.type}}</view>
+							<view class="product_cont">{{item.content}}</view>
+						</view>
+					</block>
 					
 				</view>
 				<view  class="hairs_right">
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view><view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view><view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
+					<block>
+						<view class="made_item" bindtap="detail" wx:for="{{girls_hairs1}}" wx:key='{{index}}' 
+        wx:if="{{index%2 == 0}}">
+							<image src="{{item.src}}" class="hairs_big"></image>
+							<view class="product_name">{{item.type}}</view>
+							<view class="product_cont">{{item.content}}</view>
+						</view>
+					</block>
+					
 				</view>
 			</view>
 		</view>
 		<view class="madeContItem {{currentId == 1?'madeShow':''}}">
 			<view class="flexRowBetween made_tlt">
-				<view class="made_name">官网订制-vip定制</view>
+				<view class="made_name">女士-中长发</view>
 				<view class="made_more">更多 ></view>
 			</view>
 			<view class="made_case">
 				<view class="hairs_left">
-					<view class="made_item">
-						<image src="/images/hairs1.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					
+					<block>
+						<view class="made_item" bindtap="detail" wx:for="{{girls_hairs2}}" wx:key='{{index}}' 
+        wx:if="{{index%2 == 1}}">
+							<image src="{{item.src}}" class="hairs_small"></image>
+							<view class="product_name">{{item.type}}</view>
+							<view class="product_cont">{{item.content}}</view>
+						</view>
+					</block>
 				</view>
 				<view  class="hairs_right">
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view><view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view><view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
+					<block>
+						<view class="made_item" bindtap="detail" wx:for="{{girls_hairs2}}" wx:key='{{index}}' 
+        wx:if="{{index%2 == 0}}">
+							<image src="{{item.src}}" class="hairs_big"></image>
+							<view class="product_name">{{item.type}}</view>
+							<view class="product_cont">{{item.content}}</view>
+						</view>
+					</block>
 				</view>
 			</view>
 		</view>
 		<view class="madeContItem {{currentId == 2?'madeShow':''}}">
 			<view class="flexRowBetween made_tlt">
-				<view class="made_name">小程序-模板</view>
+				<view class="made_name">女士-长发</view>
 				<view class="made_more">更多 ></view>
 			</view>
 			<view class="made_case">
 				<view class="hairs_left">
-					<view class="made_item">
-						<image src="/images/hairs1.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					
+					<block>
+						<view class="made_item" bindtap="detail" wx:for="{{girls_hairs3}}" wx:key='{{index}}' 
+        wx:if="{{index%2 == 1}}">
+							<image src="{{item.src}}" class="hairs_small"></image>
+							<view class="product_name">{{item.type}}</view>
+							<view class="product_cont">{{item.content}}</view>
+						</view>
+					</block>
 				</view>
 				<view  class="hairs_right">
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view><view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view><view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
+					<block>
+						<view class="made_item" bindtap="detail" wx:for="{{girls_hairs3}}" wx:key='{{index}}' 
+        wx:if="{{index%2 == 0}}">
+							<image src="{{item.src}}" class="hairs_big"></image>
+							<view class="product_name">{{item.type}}</view>
+							<view class="product_cont">{{item.content}}</view>
+						</view>
+					</block>
 				</view>
 			</view>
 		</view>
 		<view class="madeContItem {{currentId == 3?'madeShow':''}}">
 			<view class="flexRowBetween made_tlt">
-				<view class="made_name">小程序-vip定制</view>
+				<view class="made_name">男士-短发</view>
 				<view class="made_more">更多 ></view>
 			</view>
 			<view class="made_case">
 				<view class="hairs_left">
-					<view class="made_item">
-						<image src="/images/hairs1.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					
+					<block>
+						<view class="made_item" bindtap="detail" wx:for="{{girls_hairs4}}" wx:key='{{index}}' 
+        wx:if="{{index%2 == 1}}">
+							<image src="{{item.src}}" class="hairs_small"></image>
+							<view class="product_name">{{item.type}}</view>
+							<view class="product_cont">{{item.content}}</view>
+						</view>
+					</block>
 				</view>
 				<view  class="hairs_right">
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view><view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view><view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
+					<block>
+						<view class="made_item" bindtap="detail" wx:for="{{girls_hairs4}}" wx:key='{{index}}' 
+        wx:if="{{index%2 == 0}}">
+							<image src="{{item.src}}" class="hairs_big"></image>
+							<view class="product_name">{{item.type}}</view>
+							<view class="product_cont">{{item.content}}</view>
+						</view>
+					</block>
 				</view>
 			</view>
 		</view>
 		<view class="madeContItem {{currentId == 4?'madeShow':''}}">
 			<view class="flexRowBetween made_tlt">
-				<view class="made_name">公众号-模板</view>
+				<view class="made_name">男士-中长发</view>
 				<view class="made_more">更多 ></view>
 			</view>
 			<view class="made_case">
 				<view class="hairs_left">
-					<view class="made_item">
-						<image src="/images/hairs1.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					
+					<block>
+						<view class="made_item" bindtap="detail" wx:for="{{girls_hairs5}}" wx:key='{{index}}' 
+        wx:if="{{index%2 == 1}}">
+							<image src="{{item.src}}" class="hairs_small"></image>
+							<view class="product_name">{{item.type}}</view>
+							<view class="product_cont">{{item.content}}</view>
+						</view>
+					</block>
 				</view>
 				<view  class="hairs_right">
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view><view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view><view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
+					<block>
+						<view class="made_item" bindtap="detail" wx:for="{{girls_hairs5}}" wx:key='{{index}}' 
+        wx:if="{{index%2 == 0}}">
+							<image src="{{item.src}}" class="hairs_big"></image>
+							<view class="product_name">{{item.type}}</view>
+							<view class="product_cont">{{item.content}}</view>
+						</view>
+					</block>
 				</view>
 				
 			</view>
 		</view>
 		<view class="madeContItem {{currentId == 5?'madeShow':''}}">
 			<view class="flexRowBetween made_tlt">
-				<view class="made_name">公众号-vip模板</view>
+				<view class="made_name">男士-中长</view>
 				<view class="made_more">更多 ></view>
 			</view>
 			<view class="made_case">
 				<view class="hairs_left">
-					<view class="made_item">
-						<image src="/images/hairs1.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					
+					<block>
+						<view class="made_item" bindtap="detail" wx:for="{{girls_hairs6}}" wx:key='{{index}}' 
+        wx:if="{{index%2 == 1}}">
+							<image src="{{item.src}}" class="hairs_small"></image>
+							<view class="product_name">{{item.type}}</view>
+							<view class="product_cont">{{item.content}}</view>
+						</view>
+					</block>
 				</view>
 				<view  class="hairs_right">
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_big"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
-					<view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view><view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view><view class="made_item">
-						<image src="/images/hairs2.jpg" class="hairs_small"></image>
-						<view class="product_name">官网订制</view>
-						<view class="product_cont">长卷，显示女生气质，适合圆脸女生</view>
-					</view>
+					<block>
+						<view class="made_item" bindtap="detail" wx:for="{{girls_hairs6}}" wx:key='{{index}}' 
+        wx:if="{{index%2 == 0}}">
+							<image src="{{item.src}}" class="hairs_big"></image>
+							<view class="product_name">{{item.type}}</view>
+							<view class="product_cont">{{item.content}}</view>
+						</view>
+					</block>
 				</view>
 			</view>
 		</view>

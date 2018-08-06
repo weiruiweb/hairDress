@@ -135,7 +135,7 @@ page{background:#f5f5f5;}
 }
 .begin_group{
 	width:604rpx;
-	height:604rpx;
+	height:650rpx;
 	border-radius:10rpx;
 	background:#fff;
 	position:absolute;

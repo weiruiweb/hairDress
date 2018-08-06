@@ -31,31 +31,6 @@ input{
 	height:32rpx;
 	margin-top:25rpx;
 }
-.pay_discount input{
-	width:485rpx;
-}
-.pay_method{
-	background:#fff;
-	margin:20rpx;
-	padding:26rpx 100rpx 20rpx 20rpx;
-	border-radius:10rpx;
-	font-size:24rpx;
-}
-.pay1 image{
-	width:92rpx;
-	height:92rpx;
-}
-.pay_txt{
-	color:#535353;
-}
-.pay1{
-	text-align:center;
-}
-.pay1 text{
-	display:block;
-	color:#666;
-	line-height:50rpx;
-}
-.chose_pay{
-	width:318rpx;
+.submit_info {
+	margin-top:140rpx;
 }

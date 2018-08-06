@@ -38,4 +38,9 @@ Page({
       url:'/pages/payment/payment'
     })
   },
+  top_in:function(){
+    wx.navigateTo({
+      url:'/pages/userChongzhi/userChongzhi'
+    })
+  },
 })

@@ -1,6 +1,8 @@
 <!--appointment.wxml-->
-    <view class="order_dresser">
-        <image src="/images/tuan1.jpg" class="dresser_img"></image>
+    <view class="order_dresser flexRowBetween">
+        <view class="dresser_img">
+          <image src="/images/tuan1.jpg" class=""></image>
+        </view>
         <view class="order_right">
           <view class="dresser_name">
             <text class="text1">梁家辉</text>

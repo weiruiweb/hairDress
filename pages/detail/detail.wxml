@@ -150,13 +150,13 @@
 		<view class="pro_type">	
 			类型
 		</view>
-		<view class="pro_types">	
+		<view class="pro_types  {{isChoose == 0?'pro_this':''}}" data-type="0" bindtap="choose_type">	
 			洗剪吹
 		</view>
-		<view class="pro_types">	
+		<view class="pro_types {{isChoose == 1?'pro_this':''}}" data-type="1" bindtap="choose_type">	
 			烫发
 		</view>
-		<view class="pro_types">	
+		<view class="pro_types {{isChoose == 2?'pro_this':''}}" data-type="2" bindtap="choose_type">	
 			染发
 		</view>
 	</view>
@@ -164,10 +164,10 @@
 		<view class="pro_type">	
 			服务
 		</view>
-		<view class="pro_types">	
+		<view class="pro_types  {{isChoose1 == 0?'service_this':''}}" data-type="0" bindtap="choose_service">	
 			总监
 		</view>
-		<view class="pro_types">	
+		<view class="pro_types  {{isChoose1 == 1?'service_this':''}}" data-type="1" bindtap="choose_service">	
 			无要求
 		</view>
 	</view>

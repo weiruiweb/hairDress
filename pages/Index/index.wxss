@@ -33,32 +33,12 @@ page{
 	overflow:hidden;
 	transition:0.5s ease-in-out;
 }
-.module_item text{color:#151515;font-size:20rpx;text-align:center;}
-.module_item .firstImg,.module_item .secondImg{
-	transition:0.5s ease-in-out;
-}
-
 .module_icon image{
-	width:40rpx;
-	height:36rpx;
-	position:absolute;
-	transition: all .5s ease-in-out;
-	}
-.firstImg{
-	left:20rpx;
-	top:25rpx;
-	}
+	width:84rpx;
+	height:84rpx;
+}
+.module_item text{color:#151515;font-size:20rpx;text-align:center;}
 
-.module1{background:#4fa8ff; transition:0.5s ease-in-out;}
-
-.module2{background:#ff7979; transition:0.5s ease-in-out;}
-
-.module3{background:#fdd66d; transition:0.5s ease-in-out;}
-
-
-.module4{background:#d1a3e1; transition:0.5s ease-in-out;}
-
-.module5{background:#4fe0ff; transition:0.5s ease-in-out;}
 
 /********************服务类别*************************/
 .store{
@@ -150,14 +130,18 @@ page{
 }
 /************预约技师****************/
 .dresser_list{
-	margin:0rpx 6rpx;
+width:98%;
+	padding:0rpx 1%;
 }
 .dresser_item{
-	width:336rpx;
-	margin:0rpx 16rpx 30rpx;
+	width:46%;
+	margin:0rpx 2%;
+	margin-bottom:30rpx;
 	float:left;
 	text-align:center;
 	border-radius:10rpx;
+	background:#fff;
+	padding-bottom:30rpx;
 }
 .dresser_item image{
 	width:135rpx;
@@ -166,9 +150,7 @@ page{
 	margin-top:28rpx;
 
 }
-.dresser{
-	background:#f5f5f5;
-}
+
 .dresser_list .text1{
 	color:#4c4c4c;
 	font-size:24rpx;

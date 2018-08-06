@@ -7,12 +7,24 @@ page{
 	overflow:hidden;
 	margin-bottom:30rpx;
 	background:#fff;
+	height:210rpx;
 }
 .dresser_img{
+	width:44%;
+	text-align:center;
+	height:210rpx;
+	height:210rpx;
+	overflow:hiddden;
+
+}
+.order_right{
+	width:66%;
+	height:60%;
+	overflow:hidden;
+}
+.dresser_img image{
 	width:210rpx;
 	height:210rpx;
-	margin:0rpx 60rpx 0rpx 50rpx;
-	float:left;
 }
 .dresser_name{
 	font-size:30rpx;

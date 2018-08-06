@@ -15,10 +15,20 @@ Page({
       url:'/pages/shoppingEmpty/shoppingEmpty'
     })
   },
+  payment:function(){
+    wx.navigateTo({
+      url:'/pages/payment/payment'
+    })
+  },
    bindDateChange: function(e) {
     this.setData({
       date: e.detail.value
     })
   },
+  top_in:function(){
+    wx.navigateTo({
+      url:'/pages/userChongzhi/userChongzhi'
+    })
+  }
   
 })

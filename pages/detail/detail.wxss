@@ -200,7 +200,7 @@ line-height:62rpx;}
 }
 #choose{
 	height:566rpx;
-	width:700rpx;
+	width:704rpx;
 	position:fixed;
 	bottom:-100rpx;
 	padding:32rpx 25rpx;
@@ -261,9 +261,17 @@ line-height:62rpx;}
 	font-size:28rpx;
 	color:#666;
 	background:#f7f7f7;
-	border-radius:3rpx;
+	border-radius:10rpx;
 	float:left;
 	margin-right:30rpx;
+}
+.pro_this{
+	background:#fd5274;
+	color:#fff;
+}
+.service_this{
+	background:#fd5274;
+	color:#fff;
 }
 .choose_number{
 	height:126rpx;

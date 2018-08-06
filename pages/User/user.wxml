@@ -5,7 +5,6 @@
 			<open-data type="userAvatarUrl" class="user_pho"></open-data>
 		</view>
 		<view class="user_name">
-			米桃子
 			<open-data type="userNickName" lang="zh_CN"></open-data>
 		</view>
 		<view class="member_bank">
@@ -27,7 +26,7 @@
 			<view class="collect_number">0</view>
 			<view class="collect_txt">我的余额</view>
 		</view>
-		<view class="user_fill">
+		<view class="user_fill" bindtap="top_in">
 			去充值
 		</view>
 	</view>
@@ -62,7 +61,7 @@
 		</view>
 		<view class="user_infor flexRowBetween" bindtap="mygroup">
 			<view class="user_left flexRowBetween">
-				<image src="/images/user_icon4.jpg"></image>
+				<image src="/images/user_icon5.jpg"></image>
 				<text>我的团购</text>
 			</view>
 			<view class="next_page">
@@ -71,7 +70,7 @@
 		</view>
 		<view class="user_infor flexRowBetween" bindtap="discount">
 			<view class="user_left flexRowBetween">
-				<image src="/images/user_icon4.jpg"></image>
+				<image src="/images/user_icon6.jpg"></image>
 				<text>我的优惠卷</text>
 			</view>
 			<view class="next_page">

@@ -12,8 +12,10 @@
 </view>
 <view class="tab_cont">
 	<view class="tab_item {{tapCurrent == 0?'tab_this':''}}">
-		<view class="tab_list flexRowBetween" bindtap="detail">	
-			<image src="/images/dresser.jpg"></image>
+		<view class="tab_list" bindtap="detail">	
+			<view class="tab_img">
+				<image src="/images/dresser.jpg"></image>
+			</view>
 			<view class="active_info">
 				<view class="active_name">
 					剪吹限时抢购
@@ -36,8 +38,10 @@
 				</view>
 			</view>
 		</view>
-		<view class="tab_list flexRowBetween">	
-			<image src="/images/dresser.jpg"></image>
+		<view class="tab_list" bindtap="detail">	
+			<view class="tab_img">
+				<image src="/images/dresser.jpg"></image>
+			</view>
 			<view class="active_info">
 				<view class="active_name">
 					剪吹限时抢购
@@ -62,8 +66,10 @@
 		</view>
 	</view>
 	<view class="tab_item {{tapCurrent == 1?'tab_this':''}}">
-		<view class="tab_list flexRowBetween">	
-			<image src="/images/dresser.jpg"></image>
+		<view class="tab_list" bindtap="detail">	
+			<view class="tab_img">
+				<image src="/images/dresser.jpg"></image>
+			</view>
 			<view class="active_info">
 				<view class="active_name">
 					剪吹限时抢购
@@ -86,8 +92,10 @@
 				</view>
 			</view>
 		</view>
-		<view class="tab_list flexRowBetween">	
-			<image src="/images/dresser.jpg"></image>
+		<view class="tab_list" bindtap="detail">	
+			<view class="tab_img">
+				<image src="/images/dresser.jpg"></image>
+			</view>
 			<view class="active_info">
 				<view class="active_name">
 					剪吹限时抢购
@@ -112,8 +120,10 @@
 		</view>
 	</view>
 	<view class="tab_item {{tapCurrent == 2?'tab_this':''}}">
-		<view class="tab_list flexRowBetween">	
-			<image src="/images/dresser.jpg"></image>
+		<view class="tab_list" bindtap="detail">	
+			<view class="tab_img">
+				<image src="/images/dresser.jpg"></image>
+			</view>
 			<view class="active_info">
 				<view class="active_name">
 					剪吹限时抢购
@@ -136,8 +146,10 @@
 				</view>
 			</view>
 		</view>
-		<view class="tab_list flexRowBetween">	
-			<image src="/images/dresser.jpg"></image>
+		<view class="tab_list" bindtap="detail">	
+			<view class="tab_img">
+				<image src="/images/dresser.jpg"></image>
+			</view>
 			<view class="active_info">
 				<view class="active_name">
 					剪吹限时抢购
@@ -159,10 +171,11 @@
 					</view>
 				</view>
 			</view>
-
 		</view>
-		<view class="tab_list flexRowBetween">	
-			<image src="/images/dresser.jpg"></image>
+		<view class="tab_list" bindtap="detail">	
+			<view class="tab_img">
+				<image src="/images/dresser.jpg"></image>
+			</view>
 			<view class="active_info">
 				<view class="active_name">
 					剪吹限时抢购

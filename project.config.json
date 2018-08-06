@@ -12,7 +12,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.2.0",
-	"appid": "touristappid",
+	"appid": "wx212611f012b9cf1d",
 	"projectname": "meifa",
 	"isGameTourist": false,
 	"condition": {
@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 9,
 			"list": [
 				{
 					"id": 0,
@@ -56,7 +56,7 @@
 				{
 					"id": 3,
 					"name": "1",
-					"pathName": "pages/about/about",
+					"pathName": "pages/beginAppoint/beginAppoint",
 					"query": ""
 				},
 				{
@@ -76,6 +76,23 @@
 					"name": "1",
 					"pathName": "pages/beginAppoint/beginAppoint",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "service",
+					"pathName": "pages/Service/service",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "service",
+					"pathName": "pages/HairStyle/hairstyle",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "beginapp",
+					"pathName": "pages/beginAppoint/beginAppoint"
 				}
 			]
 		}

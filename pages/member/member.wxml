@@ -7,7 +7,7 @@
 			<view class="collect_number">0</view>
 			<view class="collect_txt">我的余额</view>
 	</view>
-	<view class="user_fill">
+	<view class="user_fill" bindtap="top_in">
 			去充值
 	</view>
 </view>
@@ -50,6 +50,6 @@
 	<text class="text2">2.这里是会员卡使用须知。</text>
 	<text class="text2">会员卡解释权归商家所有。</text>
 </view>
-<view class="payment" bindtap="shoppingEmpty">
+<view class="payment" bindtap="payment">
 	立即使用
 </view>

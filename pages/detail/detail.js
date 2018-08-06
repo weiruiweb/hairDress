@@ -6,6 +6,8 @@ Page({
   data: {
   tabCurrent:0,
   isShow:false,
+  isChoose:0,
+  isChoose1:0,
   },
   
   onLoad: function () {
@@ -32,6 +34,18 @@ Page({
   close:function(){
     this.setData({
       isShow:false
+    })
+  },
+  choose_type:function(e){
+    var current = e.currentTarget.dataset.type;
+    this.setData({
+        isChoose:current
+    })
+  },
+  choose_service:function(e){
+    var current = e.currentTarget.dataset.type;
+    this.setData({
+        isChoose1:current
     })
   }
 })

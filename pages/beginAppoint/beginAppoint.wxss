@@ -12,6 +12,17 @@ page{
 	padding:0rpx 22rpx;
 	color:#333;
 }
+.shore_choose .txt{
+	width:22%;
+	margin-right:3%;
+}
+.shore_choose .tex1{
+
+
+}
+.choose_line{
+	width:100%;
+}
 .shore_choose image{
 	width:18rpx;
 	height:32rpx;
@@ -23,7 +34,10 @@ page{
 	margin-right:28rpx;
 }
 .shore_choose .txt1{
-	width:160rpx;
+		width:20%;
+	margin-left:5%;
+	display:flex;
+
 	height:60rpx;
 	border-radius:10rpx;
 	line-height:60rpx;
@@ -32,7 +46,11 @@ page{
 	color:#999;
 	background:#dcdcdc;
 	display:inline-block;
-	margin-left:32rpx;
+
+}
+.shore_choose  .this_item{
+	background:#fe5174;
+	color:#fff;
 }
 .shore_choose .txt{
 	margin-right:30rpx;
@@ -103,24 +121,35 @@ page{
 	font-size:20rpx;
 }
 .data_choose{
-	padding:15rpx 10rpx 70rpx;
+	padding:15rpx 0rpx 70rpx;
 	background:#fff;
 	overflow:hidden;
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+.data_row{
+	display:flex;
+	flex-wrap:wrap;
 }
 .data_choose .text1{
-	margin:70rpx 53rpx 0rpx;
+	margin-top:70rpx;
+	width:25%;
 	font-size:22rpx;
-	display:flex;
-	float:left;
 	color:#fd5274;
+	text-align:center;
+	justify-content:space-between;
 	
 }
 .data_choose .text2{
-	margin:70rpx 53rpx 0rpx;
+	margin-top:70rpx;
+	width:25%;
 	font-size:22rpx;
-	display:flex;
-	float:left;
+	color:#fd5274;
+	text-align:center;
+	justify-content:space-between;
 	color:#666;
+
 	
 }
 .date1 image{

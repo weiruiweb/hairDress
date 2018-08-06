@@ -5,12 +5,12 @@
 <view class="module flexRowBetween" >
   <view class="module_item" bindtap="HairDresser">
     <view class="module_icon module1">
-      <image src="/images/index_icon1.png" class="firstImg"></image>
+      <image src="/images/index_icon1.jpg" class="firstImg"></image>
 
     </view>
     <text>预约技师</text>
   </view>
-  <view class="module_item">
+  <view class="module_item" bindtap="shoppingEmpty">
     <view class="module_icon module2">
       <image src="/images/index_icon2.jpg" class="firstImg"></image>
 
@@ -76,7 +76,7 @@
       <view class="tlt_left"></view>
   </view>
   <view class="dresser_list">
-      <view class="dresser_item">
+      <view class="dresser_item" bindtap="order">
         <image src="/images/dresser.jpg"></image>
         <view class="text">
           <text class="text1">梁辉</text><text class="text1 text2">技术总监</text>
@@ -86,7 +86,7 @@
           预约TA
         </view>
       </view>
-      <view class="dresser_item">
+      <view class="dresser_item" bindtap="order">
         <image src="/images/dresser.jpg"></image>
         <view class="text">
           <text class="text1">梁辉</text><text class="text1 text2">技术总监</text>
@@ -96,7 +96,7 @@
           预约TA
         </view>
       </view>
-      <view class="dresser_item">
+      <view class="dresser_item"  bindtap="order">
         <image src="/images/dresser.jpg"></image>
         <view class="text">
           <text class="text1">梁辉</text><text class="text1 text2">技术总监</text>
@@ -106,13 +106,13 @@
           预约TA
         </view>
       </view>
-      <view class="dresser_item">
+      <view class="dresser_item"  bindtap="order">
         <image src="/images/dresser.jpg"></image>
         <view class="text">
           <text class="text1">梁辉</text><text class="text1 text2">技术总监</text>
         </view>
         <text class="number">160人预约过</text>
-        <view class="order">
+        <view class="order" bindtap="order">
           预约TA
         </view>
       </view>

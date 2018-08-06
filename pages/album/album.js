@@ -8,6 +8,7 @@ Page({
       { 
 
         src:'/images/hairs1.jpg',
+        
       
       }, {
 

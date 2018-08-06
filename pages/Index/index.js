@@ -49,9 +49,19 @@ Page({
     })
   },
   HairDresser:function(){
-    console.log("jij")
     wx.switchTab({
       url:'/pages/HairDresser/hairDresser'
     })
   },
+  shoppingEmpty:function(){
+    wx.navigateTo({
+      url:'/pages/shoppingEmpty/shoppingEmpty'
+    })
+  },
+  order:function(){
+    wx.navigateTo({
+      url:'/pages/appointment/appointment'
+    })
+    
+  }
 })
