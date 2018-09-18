@@ -1,4 +1,5 @@
 /**index.wxss**/
+
 #sort{
 	background:#f5f5f5;
 	padding-top:35rpx;
@@ -6,6 +7,8 @@
 
 .made_sort{
 	width:27%;
+	height:100vh;
+	height:100%;
 	text-align:center;
 	background:#fff;
 	height:100%;
