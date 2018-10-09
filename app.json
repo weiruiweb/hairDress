@@ -1,10 +1,10 @@
 {
   "pages":[
-    "pages/Index/index",
+     "pages/Index/index",
     "pages/Service/service",
     "pages/HairStyle/hairstyle",
     "pages/HairDresser/hairDresser",
-    "pages/User/user",
+    "pages/user/user",
     "pages/member/member",
     "pages/consume/consume",
     "pages/album/album",
@@ -27,43 +27,11 @@
     "pages/about/about",
     "pages/sign/sign",
     "pages/caseDetail/caseDetail"
-
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "首页",
     "navigationBarTextStyle":"black"
-  },
-  "tabBar": {
-    "list": [{
-      "pagePath": "pages/Index/index",
-      "text": "首页",
-      "iconPath":"/images/navbar1.jpg",
-      "selectedIconPath":"/images/navbar1-a.jpg"
-    }, {
-      "pagePath": "pages/Service/service",
-      "text": "服务",
-      "iconPath":"/images/navbar2.jpg",
-      "selectedIconPath":"/images/navbar2-a.jpg"
-    }, {
-      "pagePath":"pages/HairStyle/hairstyle",
-      "text": "发型",
-      "iconPath":"/images/navbar3.jpg",
-      "selectedIconPath":"/images/navbar3-a.jpg"
-    }, {
-      "pagePath":"pages/HairDresser/hairDresser",
-      "text": "技师",
-      "iconPath":"/images/navbar4.jpg",
-      "selectedIconPath":"/images/navbar4-a.jpg"
-    },{
-      "pagePath":"pages/User/user",
-      "text": "我的",
-      "iconPath":"/images/navbar5.jpg",
-      "selectedIconPath":"/images/navbar5-a.jpg"
-    }],
-    "borderStyle": "#505050",
-    "color":"#666",
-    "selectedColor":"#ff4b77"
   }
 }

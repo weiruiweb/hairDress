@@ -1,41 +1,15 @@
 //index.js
 //获取应用实例
-const app = getApp()
-
+import {Api} from '../../utils/api.js';
+var api = new Api();
+const app = getApp();
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    
   },
   onLoad: function () {
-   
-  },
-  about:function(){
-    wx.navigateTo({
-      url:'/pages/about/about'
-    })
-  },
-  sign:function(){
-    wx.navigateTo({
-      url:'/pages/sign/sign'
-    })
-  },
-  caseDetail:function(){
-    wx.navigateTo({
-      url:'/pages/caseDetail/caseDetail'
-    })
-  },
-  group:function(){
-    wx.navigateTo({
-      url:'/pages/group/group'
+    this.setData({
+      fonts:app.globalData.font
     })
   },
   store:function(){
@@ -48,20 +22,12 @@ Page({
       url:'/pages/map/map'
     })
   },
-  HairDresser:function(){
-    wx.switchTab({
-      url:'/pages/HairDresser/hairDresser'
-    })
+  intoPath(e){
+    const self = this;
+    api.pathTo(api.getDataSet(e,'path'),'nav');
   },
-  shoppingEmpty:function(){
-    wx.navigateTo({
-      url:'/pages/shoppingEmpty/shoppingEmpty'
-    })
-  },
-  order:function(){
-    wx.navigateTo({
-      url:'/pages/appointment/appointment'
-    })
-    
-  }
+  intoPathRedirect(e){
+    const self = this;
+    api.pathTo(api.getDataSet(e,'path'),'redi');
+  }, 
 })

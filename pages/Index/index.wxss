@@ -58,13 +58,12 @@ page{
 .store_text1{
 	font-size:28rpx;
 	color:#666;
-	float:left;
+	width:10%;
 }
 .near{
-	float:left;
-	margin-top:18rpx;
 	position:relative;
-	margin-left:6rpx;}
+	width:14%;
+	height:55rpx;}
 .near .text1{
 	width:60rpx;
 	font-size:24rpx;
@@ -75,20 +74,20 @@ page{
 	z-index:99;
 }
 .store_active{
+	width:66%;
 	font-size:22rpx;
 	color:#999;
-	float:left;
-	margin-left:100rpx;
-	padding-right:46rpx;
 	height:30rpx;
 	line-height:30rpx;
 	border-right:solid 1px #666;
-	margin-top:27rpx;
+}
+.map{
+	width:10%;
+	text-align:right;
 }
 .map image{
 	width:35rpx;
 	height:32rpx;
-	margin-left:20rpx;
 }
 /**优惠店**/
 .discont_tlt{

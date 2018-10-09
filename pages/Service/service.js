@@ -1,7 +1,8 @@
 //index.js
 //获取应用实例
-const app = getApp()
-
+import {Api} from '../../utils/api.js';
+var api = new Api();
+const app = getApp();
 Page({
   data: {
     tapCurrent:0,
@@ -11,7 +12,6 @@ Page({
   onLoad: function () {
    
   },
- 
   tabCont:function(e){
       var currentId=e.currentTarget.dataset.id;
       this.setData({
@@ -22,5 +22,13 @@ Page({
     wx.navigateTo({
       url:'/pages/detail/detail'
     })
-  }
+  },
+  intoPath(e){
+    const self = this;
+    api.pathTo(api.getDataSet(e,'path'),'nav');
+  },
+  intoPathRedirect(e){
+    const self = this;
+    api.pathTo(api.getDataSet(e,'path'),'redi');
+  }, 
 })

@@ -82,3 +82,36 @@
 		立即支付
 	</view>
 </view>
+<view class="bottom_spacing"></view>
+<view class="navbar">
+    <view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/Index/index">
+        <view class="nav_img">
+            <image src="/images/navbar1.jpg"></image>
+        </view>
+        <view class="text">首页</view>
+    </view>
+    <view class="navbar_item" bindtap="intoPathRedirect" data-path="/pages/Service/service">
+        <view class="nav_img">
+            <image src="/images/navbar2.jpg"></image>
+        </view>
+        <view class="text">服务</view>
+    </view>
+    <view class="navbar_item"  bindtap="intoPathRedirect" data-path="/pages/HairStyle/hairstyle">
+        <view class="nav_img">
+            <image src="/images/navbar3.jpg"></image>
+        </view>
+        <view class="text">发型</view>
+    </view>
+    <view class="navbar_item"  bindtap="intoPathRedirect" data-path="/pages/HairDresser/hairDresser">
+        <view class="nav_img">
+            <image src="/images/navbar4.jpg"></image>
+        </view>
+        <view class="text">技师</view>
+    </view>
+    <view class="navbar_item"  bindtap="intoPathRedirect" data-path="/pages/user/user">
+        <view class="nav_img">
+            <image src="/images/navbar5-a.jpg"></image>
+        </view>
+        <view class="text  this-text">我的</view>
+    </view>
+</view>

@@ -1,5 +1,7 @@
 //index.js
 //获取应用实例
+import {Api} from '../../utils/api.js';
+var api = new Api();
 const app = getApp()
 
 Page({
@@ -248,4 +250,12 @@ Page({
       url:'/pages/detail/detail'
     })
   },
+  intoPath(e){
+    const self = this;
+    api.pathTo(api.getDataSet(e,'path'),'nav');
+  },
+  intoPathRedirect(e){
+    const self = this;
+    api.pathTo(api.getDataSet(e,'path'),'redi');
+  }, 
 })
